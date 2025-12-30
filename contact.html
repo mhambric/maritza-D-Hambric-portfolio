@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Contact - Maritza Hambric</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="about-container">
+    <h1 class="about-name">Get in Touch</h1>
+
+    <section class="about-section">
+      <p>
+        If you’d like to connect, collaborate, or learn more about my work,
+        feel free to reach out using the form below or email me directly.
+      </p>
+    </section>
+
+    <section id="contact" class="about-section">
+      <form id="contact-form" method="POST" action="/submit-form">
+        <label for="name">Your Name</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          required
+          placeholder="Enter your name"
+        />
+
+        <label for="email">Your Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          required
+          placeholder="Enter your email"
+        />
+
+        <label for="message">Your Message</label>
+        <textarea
+          id="message"
+          name="message"
+          rows="5"
+          required
+          placeholder="Enter your message"
+        ></textarea>
+
+        <button type="submit" class="submit-button">Send Message</button>
+      </form>
+    </section>
+
+    <section class="about-section">
+      <p>
+        Prefer email?
+        <br />
+        <a href="mailto:maritzahambric@gmail.com">
+          maritzahambric@gmail.com
+        </a>
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      Contact:
+      <a href="mailto:maritzahambric@gmail.com">maritzahambric@gmail.com</a>
+      | Phone: (310) 905-0056
+    </p>
+  </footer>
+</body>
+</html>

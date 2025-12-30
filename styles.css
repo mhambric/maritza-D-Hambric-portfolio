@@ -1,0 +1,506 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Theme variables */
+:root {
+  --bg-main: #f2e9e4;
+  --bg-surface: #ffffff;
+
+  --text-primary: #22223b;
+  --text-secondary: #4a4e69;
+
+  --accent: #4a4e69;
+  --accent-hover: #22223b;
+
+  --border-light: #e5e0dc;
+
+  --shadow-soft: 0 10px 30px rgba(34, 34, 59, 0.08);
+  --shadow-hover: 0 20px 40px rgba(34, 34, 59, 0.12);
+}
+
+/* Base styles */
+body {
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  line-height: 1.6;
+  background-color: var(--bg-main);
+  color: var(--text-primary);
+}
+
+/* Header */
+header {
+  padding: 2rem 1rem 1.25rem;
+  text-align: center;
+  
+}
+
+header h1 {
+  font-size: 2.6rem;
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+}
+
+.hero-subtitle {
+  font-size: 1.05rem;
+  color: var(--text-secondary);
+  margin-bottom: 0.5rem;
+  
+}
+
+/* Navigation */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  
+}
+
+nav a {
+  text-decoration: none;
+  font-weight: 500;
+  color: var(--text-secondary);
+  transition: color 0.2s ease;
+  
+}
+
+nav a:hover {
+  color: var(--accent-hover);
+}
+
+/* Main layout */
+section {
+  max-width: 1100px;
+  margin: 2.75rem auto;
+  padding: 0 1.5rem;
+}
+
+main.about-container {
+  max-width: 900px;
+  margin: 1rem auto 4rem;
+  padding: 0 1.5rem;
+}
+
+/* Headings */
+h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+/* Case study card (home page) */
+.case-study-card {
+  max-width: 900px;
+  margin: 0 auto 3rem;
+  background-color: var(--bg-surface);
+  padding: 3rem;
+  border-radius: 24px;
+  box-shadow: var(--shadow-soft);
+
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 3rem;
+
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.case-study-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-hover);
+}
+
+.case-study-card figure {
+  max-width: 260px;
+}
+
+.case-study-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 22px;
+  object-fit: contain;
+  box-shadow: 0 8px 24px rgba(34, 34, 59, 0.12);
+}
+
+.case-study-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.case-study-card h3 {
+  font-size: 1.9rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.case-study-tagline {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  margin-bottom: 1.25rem;
+}
+
+.short-description {
+  font-size: 1.05rem;
+  color: var(--text-secondary);
+  max-width: 420px;
+  margin-bottom: 1.25rem;
+}
+
+/* Case study page sections */
+.about-section {
+  background-color: var(--bg-surface);
+  padding: 2.25rem;
+  border-radius: 24px;
+  box-shadow: var(--shadow-soft);
+  margin-bottom: 2.25rem;
+}
+
+.section-title {
+  font-size: 1.35rem;
+  font-weight: 600;
+  margin-bottom: 1.25rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.about-section p {
+  font-size: 1.05rem;
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
+}
+
+/* Prototype grid */
+.figma-screens {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+  justify-items: center;
+  margin-top: 2rem;
+}
+
+.figma-screens figure {
+  text-align: center;
+}
+
+.figma-screens img {
+  width: 100%;
+  max-width: 160px;
+  border-radius: 18px;
+  box-shadow: var(--shadow-soft);
+}
+
+.figma-screens figcaption {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+/* Wireframes */
+
+.wireframe-row {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.wireframe-row img {
+  width: 50%;
+  max-width: 240px;
+  height: auto;
+  border-radius: 16px;
+  box-shadow: var(--shadow-soft);
+}
+
+
+/* Links */
+.read-more,
+.project-link {
+  background: none;
+  border: none;
+  padding: 0;
+  font-weight: 500;
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.read-more:hover,
+.project-link:hover {
+  color: var(--accent-hover);
+}
+
+.read-more::after,
+.project-link::after {
+  content: " →";
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 2.5rem 1rem;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+footer a {
+  font-weight: 500;
+  color: var(--accent);
+}
+
+footer a:hover {
+  color: var(--accent-hover);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .case-study-card {
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: 2.25rem;
+  }
+
+  .case-study-card figure {
+    margin: 0 auto 1.5rem;
+  }
+
+  .figma-screens {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Key prototype row */
+.prototype-row {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2.5rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.prototype-row figure {
+  text-align: center;
+}
+
+.prototype-row img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 30px;
+  box-shadow: var(--shadow-soft);
+}
+
+.prototype-row figcaption {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+/* Prototype card background */
+.prototype-row figure {
+  background-color: var(--bg-surface);
+  padding: 1.25rem 1.25rem 1.5rem;
+  border-radius: 24px;
+  box-shadow: var(--shadow-soft);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+/* Contact page form layout */
+#contact-form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* Labels */
+#contact-form label {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+/* Inputs & textarea */
+#contact-form input,
+#contact-form textarea {
+  width: 100%;
+  padding: 0.75rem 0.85rem;
+  font-size: 0.95rem;
+  border-radius: 10px;
+  border: 1px solid var(--border-light);
+  font-family: inherit;
+}
+
+#contact-form textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+/* Submit button */
+.submit-button {
+  margin-top: 0.5rem;
+  padding: 0.75rem 1.25rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border-radius: 999px;
+  border: none;
+  background-color: var(--accent);
+  color: white;
+  cursor: pointer;
+  align-self: flex-start;
+}
+
+.submit-button:hover {
+  background-color: var(--accent-hover);
+}
+
+/* Center text sections on contact page */
+.about-section p {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Scrollable prototype phone */
+.prototype-phone {
+  width: 220px;
+  height: 460px;
+  border-radius: 28px;
+  overflow-y: auto;
+  
+ 
+
+  /* Hide scrollbar (cross-browser) */
+  scrollbar-width: none;        /* Firefox */
+  -ms-overflow-style: none;     /* IE & Edge */
+}
+
+/* Hide scrollbar (Chrome, Safari) */
+.prototype-phone::-webkit-scrollbar {
+  display: none;
+}
+
+/* Image inside phone */
+.prototype-phone img {
+  width: 300%;
+  height: auto;
+  display: block;
+}
+
+/* Phone frame wrapper */
+.phone-frame {
+  width: 250px;
+  height: 500px;
+  background: #2f2f3a; /* dark phone body */
+  border-radius: 36px;
+  padding: 6px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-shadow:
+    0 25px 60px rgba(0, 0, 0, 0.25),
+    inset 0 0 0 2px rgba(255, 255, 255, 0.06);
+}
+
+/* Inner scrollable screen */
+.prototype-phone {
+  width: 100%;
+  height: 100%;
+  background: FFC107;
+  border-radius: 28px;
+  overflow-y: auto;
+
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.prototype-phone::-webkit-scrollbar {
+  display: none;
+}
+
+.prototype-phone img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Figma prototype embed */
+.figma-embed {
+  margin-top: 2rem;
+  width: 100%;
+  height: 700px;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: var(--shadow-soft);
+}
+
+.figma-embed iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Prototype explanation text */
+.prototype-intro {
+  max-width: 640px;
+  margin: 0 auto 1rem;
+  font-size: 1.05rem;
+  color: var(--text-secondary);
+  text-align: center;
+}
+
+.prototype-points {
+  max-width: 560px;
+  margin: 0 auto 1.5rem;
+  padding-left: 1.2rem;
+  color: var(--text-secondary);
+}
+
+.prototype-points li {
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+.prototype-note {
+  max-width: 560px;
+  margin: 0 auto 2rem;
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  text-align: center;
+}
+
+
+.prototype-hint {
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
+}
+
+.about-list {
+  margin-top: 0.75rem;
+  padding-left: 1.25rem;
+}
+
+.about-list li {
+  margin-bottom: 0.6rem;
+  line-height: 1.5;
+}
