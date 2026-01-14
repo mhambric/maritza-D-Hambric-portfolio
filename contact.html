@@ -30,9 +30,12 @@
         feel free to reach out using the form below or email me directly.
       </p>
     </section>
-
+<!-- used formspree to generate contact form, added message alert and redirect to contact page once form is subitted-->
     <section id="contact" class="about-section">
-      <form id="contact-form" method="POST" action="/submit-form">
+      <form method="POST" action="https://formspree.io/f/xeeeoerj">
+        <input type="hidden" name="_subject" value="New message from portfolio site">
+        <input type="hidden" name="_next" value="https://maritza-d-hambric-portfolio.vercel.app/contact.html?success=true">
+        
         <label for="name">Your Name</label>
         <input
           type="text"
@@ -41,7 +44,7 @@
           required
           placeholder="Enter your name"
         />
-
+<!-- Email input -->
         <label for="email">Your Email</label>
         <input
           type="email"
@@ -50,7 +53,7 @@
           required
           placeholder="Enter your email"
         />
-
+<!-- message input -->
         <label for="message">Your Message</label>
         <textarea
           id="message"
@@ -59,7 +62,7 @@
           required
           placeholder="Enter your message"
         ></textarea>
-
+<!-- submit message/imput -->
         <button type="submit" class="submit-button">Send Message</button>
       </form>
     </section>
