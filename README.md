@@ -21,8 +21,8 @@ The site includes a featured case study, an interactive prototype, and supportin
 
 ## Featured Case Study
 
-### StudyBuddy
-A UX research and design project focused on helping online students connect with nearby classmates to form study groups, build accountability, and reduce isolation.
+### Student PeerNest
+A UX research, design, and development project focused on helping online, commuter, and nontraditional students connect with classmates, form study groups, and reduce isolation.
 
 The case study includes:
 - Project overview and problem framing
@@ -52,7 +52,7 @@ This repository contains only frontend code and static assets.
 Typical structure:
 - `index.html` – Home page
 - `about.html` – About me and skills
-- `studybuddy.html` – Case study
+- `student-peernest.html` – Case study
 - `prototype.html` – Interactive prototype page
 - `contact.html` – Contact form
 - `styles.css` – Global styles
@@ -74,16 +74,16 @@ No server or backend is required to run this project locally or in production.
 
 To run the site locally:
 1. Clone the repository
-2. Open `index.html` in a browser  
-   or  
+2. Open `index.html` in a browser
+   or
    Use a simple local server such as Live Server in VS Code
 
 ---
 
 ## Contact
 
-Maritza D Hambric  
-Email: maritzahambric@gmail.com  
+Maritza D Hambric
+Email: maritzahambric@gmail.com
 
 ---
 
